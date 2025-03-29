@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="urf-8">
+    <title> 설문지</title>
+    </head>
+    <body>
+    <h3> 설문지 </h3>
+    소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드려요. <br>
+    <hr>
+    </body>
+    <form>
+    학년 : 
+    <label>
+    <input type="radio" name="학년" value="1"> 1학년
+    <input type="radio" name="학년" value="2"> 2학년
+    <input type="radio" name="학년" value="3"> 3학년 
+    <input type="radio" name="학년" value="4"> 4학년 
+    <br></label>
+    성별 :
+    <input type="radio" name="성별" value="1"> 남자
+    <input type="radio" name="성별" value="2"> 여자 <br>
+    
+    관심분야 : <input type="text" list="진로"> <datalist id="진로"> 
+    <option value="프론트엔드">
+    <option value="데이터베이스">
+    <option value="백엔드">
+    </datalist><br>
+
+    진로 : 
+    개발 <input type="checkbox" value="1">
+    기획 <input type="checkbox" value="2">
+    영업 <input type="checkbox" value="3">
+    창업 <input type="checkbox" value="4"> <br>
+    
+    남기고 싶은 말 : 
+     <br> <textarea cols="40" rows="20">글을 남겨 주세요.</textarea>
+
+    </form>
+    
+</html>
