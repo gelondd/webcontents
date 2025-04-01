@@ -47,4 +47,16 @@ int main()
 	return 0;
 
 
-}
+} 
+
+
+#pragma warning (disable: 4996)
+#include <stdio.h>
+int main() /*초를 몇시간 몇분 몆 초로 작성*/
+{ //1시간=60분=3600초
+double S;
+int h,m,s;
+printf("변환하고 싶은 시간을 초단위로 입력해주세요\n");
+sacnf("%If",&S);
+h=S/3600; m=S%3600/60; s=S%3600%60;
+printf("%f초를 변환합니다.\n 변환 시 %d시 %d분 %d초입니다.",S,h,m,s);
