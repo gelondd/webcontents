@@ -1,1 +1,49 @@
+#include <stdio.h>
+#pragma warning (disable :4996)
+int main()
+{
+	char fru;
+	printf("영문자 1개를 먼저 입력해주세요 :");
+	scanf("%c", &fru);
+	
+	if ('A' <= fru && fru <= 'Z')
+	{
+		if ('A' <= fru && fru <= 'C')
+		{
+			if (fru == 'A') //if*3은 좀 그럼 if 1개랑 else if 2개가 적절
+				printf("사과");
+			else if (fru == 'B')
+				printf("바나나");
+			else if (fru == 'C')
+				printf("코코넛");
+		}
+		else printf("아직 A~C까지만 지정되어 있습니다~");
 
+	}
+	else printf("대문자로 넣어 주세요!");
+
+	
+	return 0;
+}
+
+
+
+
+
+----------------------------------------
+#pragma warning (disable : 4996)
+#include <stdio.h>
+int main()
+{
+	char fru;
+	printf("영문자를 입력해주세요:");
+	scanf("%c", &fru);
+
+	switch (fru)
+	{
+	case 'A': printf("");   //정수,문자형 상수만 case 뒤 값으로 옴
+	default: printf("아직 해당 대문자에 문자가 할당되지 않아요") ;
+	}
+
+	return 0;
+}
