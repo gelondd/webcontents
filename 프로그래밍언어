@@ -47,3 +47,21 @@ int main()
 
 	return 0;
 }
+------------------------------------
+#pragma warning (disable : 4996)
+#include <stdio.h>
+int main() //1~100까지 수 중에서 3배수만 출력하는 프로그램 작성
+{
+	int num;
+	
+	num = 1;
+	while (num<=100)  //초기값****
+	{
+		if (num%3==0)
+		printf("%d",num);
+		num ++;
+		
+	}
+
+	return 0;
+}
