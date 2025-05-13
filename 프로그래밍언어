@@ -34,6 +34,21 @@ int main()
 #pragma warning (disable : 4996)
 #include <stdio.h>
 int main()
+
+------------------------------------------
+#pragma warning (disable : 4996)
+#include <stdio.h>
+int main() 
+{
+	int n,i=0,sum=0;
+	while (sum<1000)
+	{
+		sum= sum + i++;
+	}
+	n = i-1 ;
+	printf("n의 최댓값은 %d", n);
+	return 0 ;
+}
 {
 	char fru;
 	printf("영문자를 입력해주세요:");
